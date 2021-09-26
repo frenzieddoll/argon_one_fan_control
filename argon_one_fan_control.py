@@ -37,7 +37,7 @@ def listToTaple(ls):
 
 def open_config():
     try:
-        config_file_path = os.path.expanduser("~") + "/.config/systemd/user/fanctl.config"
+        config_file_path = os.path.expanduser("~") + "/.config/systemd/user/argon_one_fan_control.config"
         config_file=open(config_file_path)
         config_list = list(map(listToTaple,[s.strip().split() for s in config_file.readlines()]))
         config_file.close()
