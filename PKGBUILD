@@ -14,6 +14,6 @@ source=(
   )
 
 package() {
-  install -Dm755 "${srcdir}"/argononed.py "${pkgdir}"/opt/argonone/argononed.py
+  install -Dm755 "${srcdir}"/argonone.py "${pkgdir}"/opt/argonone/argonone.py
   install -Dm644 "${srcdir}"/argononed.service "${pkgdir}"/usr/lib/systemd/system/argononed.service
 }
