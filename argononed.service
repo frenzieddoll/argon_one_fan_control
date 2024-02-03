@@ -1,0 +1,12 @@
+[Unit]
+Description=argon one fan control Daemon
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart-always
+RemainAfterExit=true
+ExecStart=/usr/bin/python3 /opt/argonone/argonone.py
+
+[Install]
+WantedBy=default.target
